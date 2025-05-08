@@ -20,4 +20,23 @@ body {
     list-style: circle;
     margin-left: 20px;
   }
+   /** start dictionary.html **/
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: #fff;
+  }
   
+  th, td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: left;
+  }
+  
+  th {
+    background-color: #f0f0f0;
+    font-weight: bold;
+  }
+ 
+  /** stop dictionary.html **/
