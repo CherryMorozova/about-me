@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Web Dictionary</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <a href="index.html">Главная</a>
+    <h1>Как работать с формами?</h1>
+    
+  </header>
+  <main class="page_form">
+    <!--<div>
+      <p> Форма - это волшебная коробочка, которая собирает секретные послания от людей и отправляет их феям (серверу)</p>
+      <p> Представь, что в эту коробочку &lt;form&gt; кладут записки (данные). </p>
+    </div>
+
+    <form action="https://dedmoroz.ru/wishlist" method="post">
+      <h2>Письмо Деду Морозу 🎄</h2>
+    
+      <label>Как тебя зовут?<br>
+        <input type="text" name="name" placeholder="Напиши своё имя">
+      </label><br><br>
+    
+      <label>Сколько тебе лет?<br>
+        <input type="number" name="age" min="1" max="18">
+      </label><br><br>
+    
+      <label>Что ты хочешь на Новый год?<br>
+        <input type="text" name="wish" placeholder="Например, конструктор LEGO">
+      </label><br><br>
+    
+      <label>
+        <input type="checkbox" name="was_good" value="yes">
+        Я вёл(а) себя хорошо в этом году ✅
+      </label><br><br>
+    
+      <button type="submit">Отправить письмо Деду Морозу ✉️</button>
+    </form>
+    
+
+-->
+  <div class="box_text">
+      <h2>Создать текстовое поле для ввода.</h2><br>
+    <pre>&lt;form action="http://127.0.0.1:5500/form.html" method="post"&gt;<br>
+        &lt;label&gt;<br>
+          &lt;span&gt;Логин:&lt;/span&gt;<br>
+          &lt;input type="text" name="login" id="login_text" value="CherryMorozova"&gt;<br>
+        &lt;/label&gt;<br>
+    &lt;/form&gt;</p>
+    </pre>
+    <form action="http://127.0.0.1:5500/form.html" method="post">
+      <label>  
+        <span>Логин:</span>
+        <input type="text" name="login" id="login_text" value="CherryMorozova">
+    </label>
+    </form>
+    <div class="important">
+      <p>Если нельзя обернуть поле и подпись в &lt;label&gt;, нужно связать их через id:</p>
+        <ol>
+          <li>задай полю уникальный id.</li>
+          <li>оберни подпись в &lt;label&gt;.</li>
+          <li>в &lt;label&gt; добавь атрибут for="id_поля".</li>
+        </ol>
+      </div>
+  </div>  
+  <div class="box_password">
+    <h2>Создать поле для ввода пароля.</h2><br>
+    <pre>
+    &lt;form action="http://127.0.0.1:5500/form.html" method="post"&gt;<br>
+      &lt;label&gt;<br>
+        &lt;span&gt;Пароль:&lt;/span&gt;<br>
+        &lt;input type="password" name="password"&gt;<br>
+      &lt;/label&gt;<br>
+    &lt;/form&gt;</p>
+  </pre>
+  <form action="http://127.0.0.1:5500/form.html" method="post">
+    <label>  
+      <span>Логин:</span>
+      <input type="password" name="password" id="password" value="CherryMorozova">
+  </label>
+  </form>
+  </div>
+  <div class="box_password">
+    <h2>Создать кнопку для отправки формы.</h2><br>
+    <pre>
+    &lt;form action="http://127.0.0.1:5500/form.html" method="post"&gt;<br>
+        &lt;input type="submit" name="submit" value="Войти"&gt;<br>
+    &lt;/form&gt;</p>
+  </pre>
+  <form action="http://127.0.0.1:5500/form.html" method="post">
+      <input type="submit" name="submit" id="password" value="Войти">
+  </form>
+    <div class="important">
+      <p>Надпись на кнопке можно задать с помощью атрибута value.</p>
+    </div>
+  </div>
+  <div class="box_textarea">
+    <h2>Создать поле для многострочного ввода.</h2><br>
+    <pre>
+    &lt;form action="http://127.0.0.1:5500/form.html" method="post"&gt;<br>
+        &lt;textarea name="textarea" rows="10" cols="50"&gt;<br>
+        Текс, который отобразится в поле<br>
+        &lt;textarea&gt;<br>
+    &lt;/form&gt;</p>
+  </pre>
+  <form action="http://127.0.0.1:5500/form.html" method="post">
+      <textarea name="textarea" rows="10" cols="50">
+        Текс, который отобразится в поле
+      </textarea>
+  </form>
+    <div class="important">
+      <p>Многострочное поле создаётся с атрибутами name, id, rows (высота в строках) и cols (ширина в символах).<br> 
+        Значение по умолчанию указывается между тегами, так как атрибут value у отсутствует.</p>
+    </div>
+  </div>
+  <div class="box_checkbox">
+    <h2>Чекбокс.</h2><br>
+    <pre>
+      &lt;form action="http://127.0.0.1:5500/form.html" method="post"&gt;<br>
+          &lt;input type="checkbox" name="checkbox" checked&gt;<br>
+          &lt;label for="checkbox_form"&gt;<br>
+          &lt;span&gt;Поставь галочку, если молодец!&lt;/span&gt;<br>
+          &lt;/label&gt;<br>
+      &lt;/form&gt;</p>
+    </pre>
+    <form action="http://127.0.0.1:5500/form.html" method="post">
+        <input type="checkbox" name="checkbox" id="checkbox_form" checked>
+        <label for="checkbox_form">
+          <span>Поставь галочку, если молодец!</span>
+        </label>
+    </form>
+      <div class="important">
+        <p>Чекбокс — это &lt;input type="checkbox"&gt;, работающий по принципу «включено/выключено»: если отмечен,<br>браузер отправляет его имя на сервер, если нет — ничего не отправляется.<br>
+            По умолчанию чекбокс можно включить атрибутом checked, а value указывать необязательно.</p>
+      </div>
+  </div>
+</main>
+  <footer>
+    <p>&copy; 2025. Наталия Севостьянова</p>
+  </footer>
+</body>
+</html>
