@@ -137,6 +137,82 @@
             По умолчанию чекбокс можно включить атрибутом checked, а value указывать необязательно.</p>
       </div>
   </div>
+  <div class="box_radio">
+    <h2>Радиокнопка.</h2><br>
+    <pre>
+      &lt;form action="http://127.0.0.1:5500/form.html" method="post"&gt;<br>
+      &lt;p&gt;Ты принимаешь синюю таблетку, и сказка кончается.<br>
+         Ты просыпаешься в своей постели и веришь во что хочешь верить.<br> 
+         Ты принимаешь красную таблетку, и остаешься в стране чудес,<br>
+         а я покажу тебе, насколько глубока кроличья нора&lt;/p&gt;<br>
+          &lt;label&gt;<br>
+            &lt;input type="radio" name="radio" value="Синяя"&gt;<br>
+            &lt;span&gt;Синяя&lt;/span&gt;<br>
+          &lt;/label&gt;<br>
+          &lt;label&gt;<br>
+            &lt;input type="radio" name="radio" value="Красная"&gt;<br>
+            &lt;span&gt;Красная&lt;/span&gt;<br>
+          &lt;/label&gt;<br>
+      &lt;/form&gt;</p>
+    </pre>
+    <form action="http://127.0.0.1:5500/form.html" method="post">
+      <p>Ты принимаешь синюю таблетку, и сказка кончается.<br>
+      Ты просыпаешься в своей постели и веришь во что хочешь верить.<br> 
+      Ты принимаешь красную таблетку, и остаешься в стране чудес,<br>
+      а я покажу тебе, насколько глубока кроличья нора</p><br>
+        <label>
+          <input type="radio" name="radio" value="Синяя" checked>
+          <span>Синяя</span>
+        </label>
+        <label>
+          <input type="radio" name="radio" value="Красная">
+          <span>Красная</span>
+        </label>
+    </form>
+      <div class="important">
+        <p>Радиокнопка — это тег &lt;input type="radio"&gt;, который используется в группах с одинаковым именем (name),<br>
+           но разными значениями (value). Атрибут checked позволяет выбрать вариант по умолчанию,<br> 
+           а id у каждой кнопки должен быть уникальным.Браузер отправляет на сервер value выбранной радиокнопки.</p>
+      </div>    
+  </div>
+  <div class="box_select">
+    <h2>Раскрывающийся список, или «селект».</h2><br>
+    <pre>
+      &lt;form action="http://127.0.0.1:5500/form.html" method="post"&gt;
+      &lt;p&gt;Самый душный знак задиака?
+          &lt;select name="zodiac_sign"&gt;
+            &lt;option value="capricorn"&gt;
+              Козерог
+            &lt;/option&gt;
+            &lt;option value="virgo"&gt;
+              Дева
+            &lt;/option&gt;
+            &lt;option value="cancer"&gt;
+              Рак
+            &lt;/option&gt;
+          &lt;/select&gt;
+      &lt;/form&gt;</p>
+    </pre>
+    <form action="http://127.0.0.1:5500/form.html" method="post">
+      <p>Самый душный знак задиака?</p>
+      <select name="zodiac_sign">
+      <option value="capricorn">
+        Козерог
+      </option>
+      <option value="virgo">
+        Дева
+      </option>
+      <option value="cancer">
+        Рак
+      </option>
+    </select>
+    </form>
+      <div class="important">
+        <p>Выпадающий список (&lt;select&gt;) позволяет выбрать один вариант, как и радиокнопки, но компактнее.<br>
+           Варианты задаются тегами &lt;option&gt; внутри &lt;select&gt;, где value определяет отправляемое значение.<br>
+           Если value нет, на сервер идёт текст внутри &lt;option&gt;.</p>
+      </div>    
+  </div>
 </main>
   <footer>
     <p>&copy; 2025. Наталия Севостьянова</p>

@@ -65,3 +65,9 @@ body {
   .box_checkbox {
     border: 1px red solid;
   }
+  .box_radio {
+    border: 1px red solid;
+  }
+  .box_select {
+    border: 1px red solid;
+  }
