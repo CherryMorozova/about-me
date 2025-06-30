@@ -11,7 +11,47 @@
     <h1>Как работать с формами?</h1>
     
   </header>
-  <main class="page_form">
+
+
+
+  <!--------------------->
+  <div class="example-section">
+    <h2 class="example-title">Создать поле для многострочного ввода</h2>
+  
+    <div class="example-grid">
+      
+      <!-- Левая колонка: код -->
+      <div class="example-code">
+        <h3 class="section-subtitle">Пример кода</h3>
+        <pre class="example-code-form">
+  &lt;form action=&quot;#&quot; method=&quot;post&quot;&gt;
+    &lt;textarea name=&quot;textarea&quot; rows=&quot;10&quot; cols=&quot;50&quot;&gt;
+    Текст, который отобразится в поле
+    &lt;/textarea&gt;
+  &lt;/form&gt;
+        </pre>
+      </div>
+  
+      <!-- Правая колонка: демо -->
+      <div class="example-demo">
+        <h3 class="section-subtitle">Как это работает</h3>
+        <form action="#" method="post">
+          <textarea name="textarea" rows="10" cols="50" class="demo-textarea">
+  Текст, который отобразится в поле
+          </textarea>
+        </form>
+      </div>
+    </div>
+  
+    <!-- Описание -->
+    <div class="example-note">
+      <p>
+        Многострочное поле создаётся с атрибутами <code>name</code>, <code>rows</code> и <code>cols</code>. Значение по умолчанию указывается <strong>между тегами</strong>, так как у <code>textarea</code> нет атрибута <code>value</code>.
+      </p>
+    </div>
+  </div>
+  
+    
     <!--<div>
       <p> Форма - это волшебная коробочка, которая собирает секретные послания от людей и отправляет их феям (серверу)</p>
       <p> Представь, что в эту коробочку &lt;form&gt; кладут записки (данные). </p>
@@ -42,6 +82,127 @@
     
 
 -->
+<!-- Начало примера -->
+<div class="example-section">
+  <h2 class="example-title">Заголовок</h2>
+  <div class="example-grid">
+    <!-- Левая колонка: код -->
+    <div class="example-code">
+      <h3 class="section-subtitle">Пример кода</h3>
+      <pre class="example-code-form">
+&lt; &quot; &quot; &gt;
+      </pre>
+    </div>
+    <!-- Правая колонка: демо -->
+    <div class="example-demo">
+      <h3 class="section-subtitle">Как это работает</h3>
+      <form action="#" method="post">
+        <textarea name="textarea" rows="10" cols="50" class="demo-textarea">
+          Нужный тег, но не забыть про класс!!!
+        </textarea>
+      </form>
+    </div>
+  </div>
+  <!-- Описание -->
+  <div class="example-note">
+    <p>
+      Описание, главно можно отметить жирным, а части кода с помощью тега &lt;code&gt;
+    </p>
+  </div>
+</div>
+<!-- Конец примера -->
+
+<!-- Начало "текстовое поле"-->
+<div class="example-section">
+  <h2 class="example-title">Создать текстовое поле для ввода.</h2>
+  <div class="example-grid">
+    <!-- Левая колонка: код -->
+    <div class="example-code">
+      <h3 class="section-subtitle">Пример кода</h3>
+      <pre class="example-code-form">
+  &lt;form action="http://127.0.0.1:5500/form.html" method="post"&gt;
+    &lt;label&gt;
+      &lt;span&gt;Введите логин:&lt;/span&gt;
+    &lt;/label&gt;
+      &lt;input type="text" name="login" id="login_text" value="Liya"&gt; 
+  &lt;/form&gt;</p>
+
+      </pre>
+    </div>
+    <!-- Правая колонка: демо -->
+    <div class="example-demo">
+      <h3 class="section-subtitle">Как это работает</h3>
+      <form action="#" method="post" class="demo-textarea">
+        <label>
+          <span>Введите логин</span>
+        </label>
+        <input type="text" name="login" id="login_text" value="Liya">
+      </form>
+    </div>
+  </div>
+  <!-- Описание -->
+  <div class="example-note">
+    <p>
+      Описание, главно можно отметить жирным, а части кода с помощью тега &lt;code&gt;
+    </p>
+  </div>
+</div>
+<!-- Конец "текстовое поле"-->
+
+<!-- Начало -->
+<!-- Конец -->
+
+<!-- Начало -->
+<!-- Конец -->
+
+<!-- Начало -->
+<!-- Конец -->
+
+<!-- Начало -->
+<!-- Конец -->
+
+<!-- Начало -->
+<!-- Конец -->
+
+<!-- Начало -->
+<!-- Конец -->
+
+<!-- Начало -->
+<!-- Конец -->
+
+<!-- Начало -->
+<!-- Конец -->
+
+<!-- Начало -->
+<!-- Конец -->
+
+<!-- Начало -->
+<!-- Конец -->
+
+<!-- Начало -->
+<!-- Конец -->
+
+<!-- Начало -->
+<!-- Конец -->
+
+<!-- Начало -->
+<!-- Конец -->
+
+<!-- Начало -->
+<!-- Конец -->
+
+<!-- Начало -->
+<!-- Конец -->
+
+<!-- Начало -->
+<!-- Конец -->
+
+<!-- Начало -->
+<!-- Конец -->
+
+<!-- Начало -->
+<!-- Конец -->
+
   <div class="box_text">
       <h2>Создать текстовое поле для ввода.</h2><br>
     <pre>&lt;form action="http://127.0.0.1:5500/form.html" method="post"&gt;<br>
@@ -56,6 +217,47 @@
         <span>Логин:</span>
         <input type="text" name="login" id="login_text" value="CherryMorozova">
     </label>
+    <input type="date" name="delivery_date">
+    <input type="time" name="time">
+    <input type="number" name="number" min="1" max="20" step="2">
+    <input type="search">
+    <input type="range" min="1" max="10">
+    <label for="tel">Номер телефона</label>
+    <input type="tel" name ="tel" id="tel" pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}" required placeholder="Формат номера X-XXX-XXX">
+    <div class="half-width">
+      <label for="email">Email</label>
+      <input type="email" name="email" required>
+    </div>
+    <div class="half-width">
+      <label for="url">Личный сайт</label>
+      <input type="url" name="url" required>
+    </div>
+    <div class="one-third-width">
+      <label for="color">Окрас</label>
+      <input type="color" name="color">
+    </div>
+    <div class="two-third-width">
+      <label for="food">Любимая еда кота</label>
+      <select id="food" name="food">
+        <optgroup label="Группа вариантов 1">
+        <option value="meat">Мясо</option>
+        <option value="fish">Рыба</option>
+        <option value="chi">Курочка</option>
+        <option value="ind">Индейка</option>
+        <option value="mice">Мыши</option>
+        </optgroup>
+        <optgroup label="Группа вариантов 2">
+        <option value="milk">Молоко</option>
+        <option value="kef">Кефир</option>
+        <option value="water">Вода</option>
+        <option value="smet">Сметана</option>
+        </optgroup>
+      </select>
+    </div>
+    <input type="text" value="readonly" readonly>  
+    <input type="text" value="disabled" disabled>   
+    <input type="text" value="autocomplete" autocomplete="off">
+    <input type="text" value="tabindex" tabindex="2">   
     </form>
     <div class="important">
       <p>Если нельзя обернуть поле и подпись в &lt;label&gt;, нужно связать их через id:</p>
@@ -65,7 +267,146 @@
           <li>в &lt;label&gt; добавь атрибут for="id_поля".</li>
         </ol>
       </div>
-  </div>  
+      <div class="important">
+        <p>
+          Скрытое поле (&lt;input type="hidden"&gt;) позволяет передавать служебные данные<br> 
+          (например, ID заказа) без отображения в форме.
+          <code>
+            &lt;input type="hidden" name="user_id" value="12345"&gt;
+          </code>
+        </p>
+      </div>
+      <div class="important">
+        <p>
+          Добавь атрибут required к полю, которое должно быть обязательно заполнено.
+        </p>
+      </div>
+      <div class="important">
+        <p>
+          Добавить в форму поле для даты используй &lt;input type="date"&gt; — при клике появится удобный календарик.<br> 
+          Если браузер старый и не поддерживает этот тип, то покажется обычное текстовое поле, где дату можно ввести вручную.<br> 
+          &lt;input type="time"&gt; для выбора времени.
+        </p>
+      </div>
+      <div class="important">
+        <p>
+          Поле &lt;input type="number"&gt; принимает только числа, а атрибуты min, max и step задают допустимый диапазон и шаг изменения.
+        </p>
+      </div>
+      <div class="important">
+        <p>
+          Поле &lt;input type="search"&gt; создаёт стилизованное поле для поиска с возможностью быстрой очистки.
+        </p>
+      </div>
+      <div class="important">
+        <p>
+          Добавь атрибут autofocus к нужному полю, чтобы курсор автоматически устанавливался в него при загрузке страницы.
+        </p>
+      </div>
+      <div class="important">
+        <p>
+          В HTML есть специальные поля для ввода даты и времени (datetime-local), выбора недели (week) и месяца (month).<br> 
+          Например, поле &lt;input type="month"&gt; позволяет удобно выбрать месяц и год.
+        </p>
+      </div>
+      <div class="important">
+        <p>
+          Поля с типом range позволяют выбрать значение из заданного диапазона, где min и max определяют границы, а step — шаг изменения.
+        </p>
+      </div>
+      <div class="important">
+        <p>
+          Тег &lt;output&gt; используется для вывода результатов, например, расчётов или действий пользователя.
+        </p>
+      </div>
+      <div class="important">
+        <p>
+          Тег &lt;fieldset&gt; группирует связанные поля формы, а &lt;legend&gt; добавляет поясняющий заголовок для группы.
+        </p>
+      </div>
+      <div class="important">
+        <p>
+          Для проверки формата номера добавь атрибут pattern с регулярным выражением. Пример для российского номера:<br>
+          &lt;input type="tel" name ="tel" id="tel" pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}" required&gt;
+        </p>
+      </div>
+      <div class="important">
+        <p>
+          HTML5 ввел специальные поля email и url для ввода адресов почты и сайтов, автоматически проверяя их формат. <br>
+          Хотя внешне они выглядят как обычные текстовые поля, на мобильных устройствах при вводе<br> 
+          автоматически меняется раскладка клавиатуры, упрощая ввод символов вроде @ и точек.<br>  
+          Пример использования: &lt;input type="email"&gt; и &lt;input type="url"&gt;.
+        </p>
+      </div>
+      <div class="important">
+        <p>
+          Воспользуемся атрибутом placeholder, чтобы подсказывать в каком именно формате следует вводить номера котопаспорта и телефона. Пример для российского номера:<br>
+          &lt;input type="tel" name ="tel" id="tel" pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}" required placeholder="Формат номера X-XXX-XXX"&gt;
+        </p>
+      </div>
+      <div class="important">
+        <p>
+          HTML5 включает тип **color**, позволяющий выбирать цвет через всплывающую палитру при клике на поле.<br>
+          Этот элемент создается тегом &lt;input type="color"&gt; и упрощает выбор оттенков без ручного ввода.  
+        </p>
+      </div>
+      <div class="important">
+        <p>
+          В HTML тег **optgroup** позволяет группировать элементы **option** внутри **select**, делая список более структурированным.<br> 
+          С помощью атрибута **label** задается название группы, что упрощает навигацию в длинных списках.<br>  
+          Например:  
+          <code><pre>
+            &lt;select&gt;  
+              &lt;optgroup label="Группа 2"&gt;  
+                &lt;option>Вариант 1&lt;/option&gt;
+                &lt;option>Вариант 2&lt;/option&gt;
+                &lt;option>Вариант 3&lt;/option&gt;
+              &lt;optgroup label="Группа 2"&gt;  
+                &lt;option>Вариант 4&lt;/option&gt;
+                &lt;option>Вариант 5&lt;/option&gt;
+                &lt;option>Вариант 6&lt;/option&gt;  
+              &lt;/optgroup&gt;  
+          &lt;/select&gt; 
+          </code>
+        </p>
+      </div>
+      <div class="important">
+        <p>
+          В HTML можно заблокировать редактирование полей с помощью атрибутов **readonly** и **disabled**.<br>
+          Поле с **readonly** запрещает ввод, но позволяет выделять и копировать текст, а его данные отправляются на сервер.<br>
+          При **disabled** поле полностью неактивно — текст нельзя выделить или скопировать, а его значение исключается из отправки. 
+            &lt;input type="text" readonly&gt;  
+            &lt;input type="text" disabled&gt;  
+     
+         </p>
+        </div>
+        <div class="important">
+          <p>
+            Браузеры могут автоматически подставлять ранее введенные значения в поля формы, предлагая варианты при вводе. <br>
+            Это поведение контролируется атрибутом **autocomplete**, который принимает значения **on** (разрешить) или **off** (запретить).<br> 
+            Отключение автозаполнения полезно для защиты конфиденциальных данных, таких как пароли или платежные реквизиты.  
+            &lt;input type="text" autocomplete="off"&gt;
+          </p>
+        </div>
+        <div class="important">
+          <p>
+            Навигация между элементами формы с помощью клавиши Tab происходит в порядке, заданном атрибутом **tabindex**. <br>
+            Числовое значение этого атрибута определяет последовательность перехода: от меньших чисел к большим, <br>
+            при этом отрицательные значения исключают элемент из навигации, а ноль оставляет порядок на усмотрение браузера.<br>
+            Хотя **tabindex** позволяет изменять стандартный порядок, это может ухудшить доступность интерфейса.  
+            &lt;input type="text" tabindex="2"&gt;   
+          </p>
+        </div>
+        <div class="important">
+          <p>
+            Чтобы предотвратить потерю данных в формах при перезагрузке страницы, можно использовать **localStorage** - встроенное хранилище браузера.<br> 
+            Оно позволяет сохранять информацию даже после закрытия вкладки или браузера, а затем автоматически заполнять форму при повторном открытии страницы.<br>
+            Данные записываются с помощью JavaScript при вводе и проверяются при загрузке страницы.<br>
+            Этот подход надежно защищает пользователей от случайной потери введенной информации.
+          </p>
+        </div>
+  </div>
+
   <div class="box_password">
     <h2>Создать поле для ввода пароля.</h2><br>
     <pre>
@@ -83,7 +424,7 @@
   </label>
   </form>
   </div>
-  <div class="box_password">
+  <div class="box_input">
     <h2>Создать кнопку для отправки формы.</h2><br>
     <pre>
     &lt;form action="http://127.0.0.1:5500/form.html" method="post"&gt;<br>
@@ -92,10 +433,42 @@
   </pre>
   <form action="http://127.0.0.1:5500/form.html" method="post">
       <input type="submit" name="submit" id="password" value="Войти">
+      <input type="reset" value="Очистить форму">
+      <input type="button" value="Кнопка">
+      <input type="image" src="/img/button.jpeg" alt="Войти" width="50">
+      <button type="submit"><img src="/img/login.png" width="100"></button>
   </form>
     <div class="important">
       <p>Надпись на кнопке можно задать с помощью атрибута value.</p>
     </div>
+    <div class="important">
+      <p>Кнопка &lt;input type="reset"&gt; сбрасывает введённые в форму данные,<br>
+        возвращая значения по умолчанию. Например:<br>
+        &lt;input type="reset" value="Очистить форму"&gt;
+      </p>
+    </div>
+    <div class="important">
+      <p>
+        Кнопка &lt;input type="button"&gt; не имеет встроенного действия и используется для запуска JavaScript-функций.<br>
+        Пример: &lt;input type="button" value="Нажми меня" onclick="myFunction()"&gt;
+      </p>
+    </div>
+    <div class="important">
+      <p>Кнопка-изображение (&lt;input type="image"&gt;) отправляет форму, используя картинку (атрибут src),<br> 
+        и передаёт координаты клика. Пример:&lt;input type="image" src="button.png" alt="Отправить"&gt;
+      </p>
+    </div>
+    <div class="important">
+      <p>
+        Тег &lt;button&gt; позволяет создавать кнопки с любым HTML-содержимым, например, иконками или текстом.<br> 
+        По умолчанию он работает как кнопка отправки (type="submit"), но может быть изменён на reset (сброс формы)<br> 
+        или button (действие через JavaScript). Например:<br> 
+        &lt;button type="submit"&gt;Отправить &lt;img src="icon.png"&gt;&lt;/button&gt;<br> 
+        &lt;button type="reset"&gt;Сбросить&lt;/button&gt;<br>  
+        &lt;button type="button" onclick="alert('Click!')"&gt;Просто кнопка&lt;/button&gt;<br>
+      </p>
+    </div>
+ 
   </div>
   <div class="box_textarea">
     <h2>Создать поле для многострочного ввода.</h2><br>
@@ -211,8 +584,59 @@
         <p>Выпадающий список (&lt;select&gt;) позволяет выбрать один вариант, как и радиокнопки, но компактнее.<br>
            Варианты задаются тегами &lt;option&gt; внутри &lt;select&gt;, где value определяет отправляемое значение.<br>
            Если value нет, на сервер идёт текст внутри &lt;option&gt;.</p>
-      </div>    
+      </div>   
+      <div class="important">
+        <p>Мультиселект (&lt;select multiple&gt;) позволяет выбрать несколько вариантов, удерживая Ctrl (Win) или Cmd (Mac).<br> 
+          По умолчанию выбранные пункты отмечаются атрибутом selected, а для корректной обработки в PHP<br> 
+          имя списка рекомендуется указывать с квадратными скобками — например, name="days[]".</p>
+      </div>     
   </div>
+  <div class="box_datalist">
+    <h2>Список возможных значений.</h2><br>
+    <pre>
+    &lt;form action="http://127.0.0.1:5500/form.html" method="post" enctype="multipart/form-data"&gt;
+      &lt;label for="dish"&gt;Блюдо&lt;/label&gt;
+        &lt;input type="text" id="dish" name="dish" list="browsers"&gt;
+        &lt;datalist id="browsers"&gt;
+          &lt;option value="meat"&gt;&lt;/option&gt;
+          &lt;option value="fish"&gt;&lt;/option&gt;
+          &lt;option value="chicken"&gt;&lt;/option&gt;
+        &lt;/datalist&gt;
+    &lt;/form&gt;</p>
+  </pre>
+  <form action="http://127.0.0.1:5500/form.html" method="post" enctype="multipart/form-data">
+    <label for="dish">Блюдо</label>
+    <input type="text" id="dish" name="dish" list="browsers">
+    <datalist id="browsers">
+      <option value="meat"></option>
+      <option value="fish"></option>
+      <option value="chicken"></option>
+    </datalist>
+  </form>
+    <div class="important">
+      <p>
+        Тег &lt;datalist&gt; создаёт выпадающий список подсказок для поля &lt;input&gt;, упрощая ввод.<br> 
+        Варианты задаются тегами &lt;option&gt; внутри &lt;datalist&gt;, а связь с полем — через атрибут list.
+        
+      </p>
+    </div>
+    <div class="box_file">
+      <h2>Поле для загрузки файлов.</h2><br>
+      <pre>
+      &lt;form action="http://127.0.0.1:5500/form.html" method="post" enctype="multipart/form-data"&gt;<br>
+          &lt;input type="file" name="file"&gt;<br>
+          &lt;input type="submit" value="Загрузить"&gt;<br>
+      &lt;/form&gt;</p>
+    </pre>
+    <form action="http://127.0.0.1:5500/form.html" method="post" enctype="multipart/form-data">
+      <input type="file" name="file">  
+      <input type="submit" name="submit" value="Загрузить">
+    </form>
+      <div class="important">
+        <p>Поле для загрузки файлов создаётся тегом &lt;input type="file" name="file"&gt;<br> 
+          и требует добавления атрибута enctype="multipart/form-data" в тег &lt;form&gt;.<br>
+          Внешний вид такого поля зависит от ОС (например, Windows, macOS, Linux) и сложно стилизуется.</p>
+      </div>
 </main>
   <footer>
     <p>&copy; 2025. Наталия Севостьянова</p>
