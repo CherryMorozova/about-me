@@ -152,4 +152,50 @@ body {
     border-radius: 8px;
     font-size: 0.95rem;
   }
-  
+ 
+
+.demo-search-form {
+  display: flex;
+  max-width: 400px;
+}
+
+.search-field {
+  flex-grow: 1;
+  padding: 10px 15px;
+  border: 2px solid #ddd;
+  border-radius: 20px 0 0 20px;
+  font-size: 16px;
+}
+
+.search-button {
+  padding: 0 20px;
+  background: #4c95af;
+  color: white;
+  border: none;
+  border-radius: 0 20px 20px 0;
+  cursor: pointer;
+}
+
+.feature-list, .recommendation-list {
+  margin: 10px 0;
+  padding-left: 20px;
+}
+
+.accessibility-tip {
+  background-color: #e3f2fd;
+  padding: 10px;
+  border-radius: 4px;
+  margin-top: 15px;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
