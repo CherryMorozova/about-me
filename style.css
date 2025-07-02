@@ -1,86 +1,98 @@
+/* Базовая стилистика */
 body {
-    font-family: sans-serif;
-    background-color: #f7f7f7;
-    color: #333;
-    padding: 20px;
-  }
-  
-  header, footer {
-    background-color: #e0e0e0;
-    padding: 10px;
-    text-align: center;
-    border-radius: 5px;
-  }
-  
-  h1 {
-    color: #2c3e50;
-  }
-  
-  ul {
-    list-style: circle;
-    margin-left: 20px;
-  }
-   /** start dictionary.html **/
-  table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 20px;
-    background-color: #fff;
-  }
-  
-  th, td {
-    border: 1px solid #ccc;
-    padding: 10px;
-    text-align: left;
-  }
-  
-  th {
-    background-color: #f0f0f0;
-    font-weight: bold;
-  }
- 
-  /** stop dictionary.html **/
+  font-family: Georgia, serif;
+  background-color: #fdf8f3;
+  color: #2c2c2c;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
 
-  /**start page_form**/
+/* Заголовки */
+h1, h2, h3 {
+  color: #5b3e2b;
+  margin-top: 0;
+}
 
-  .page_form {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    gap: 20px;
-    
-  }
-  .box_text {
-    border: 1px red solid;
-  }
-  .box_password {
-    border: 1px red solid;
-  }
-  .important {
-    border: 1px red dotted;
-  }
-  .box_textarea {
-    border: 1px red solid;
-  }
-  .box_checkbox {
-    border: 1px red solid;
-  }
-  .box_radio {
-    border: 1px red solid;
-  }
-  .box_select {
-    border: 1px red solid;
-  }
-  .box_input {
-    border: 1px red solid;
-  }
-  .box_file {
-    border: 1px red solid;
-  }
-  .box_datalist {
-    border: 1px red solid;
-  }
- 
+a {
+  color: #007acc;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Шапка и подвал */
+.site-header, .site-footer {
+  background-color: #fffdf8;
+  padding: 1.5rem;
+  border-bottom: 1px solid #ddd;
+  text-align: center;
+}
+
+.site-footer {
+  border-top: 1px solid #ddd;
+  font-size: 0.9em;
+}
+
+/* Основной контейнер */
+.main-content {
+  max-width: 960px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+/* Блоки */
+.example-section {
+  background-color: #fffaf3;
+  border-left: 6px solid #f5d7a3;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+  border-radius: 4px;
+}
+
+.example-title {
+  margin-top: 0;
+}
+
+.example-note {
+  background-color: #fff5e0;
+  padding: 1rem;
+  border-left: 4px solid #e0b15c;
+  border-radius: 4px;
+}
+
+
+.contacts-section {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: 'Arial', sans-serif;
+}
+
+.contacts-title {
+  color: #333;
+  border-bottom: 2px solid #eee;
+  padding-bottom: 10px;
+}
+
+.contact-item {
+  margin: 15px 0;
+  font-size: 18px;
+}
+
+.contact-item a {
+  color: #2c82c9;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.contact-item a:hover {
+  color: #1a5a88;
+  text-decoration: underline;
+}
 
 
 
@@ -199,3 +211,506 @@ body {
   white-space: nowrap;
   border: 0;
 }
+
+
+.phone-input {
+  padding: 10px 15px;
+  border: 2px solid #ddd;
+  border-radius: 4px;
+  font-size: 16px;
+  width: 100%;
+  max-width: 300px;
+}
+
+.feature-list, .recommendation-list {
+  margin: 10px 0;
+  padding-left: 20px;
+}
+
+.mobile-optimization {
+  background-color: #e8f5e9;
+  padding: 10px;
+  border-radius: 4px;
+  margin-top: 15px;
+}
+
+.js-example, .attr-example {
+  background: #f5f5f5;
+  padding: 8px;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.demo-range {
+  width: 200px;
+  vertical-align: middle;
+}
+
+.demo-number {
+  width: 60px;
+  padding: 5px;
+}
+
+.feature-list, .recommendation-list {
+  margin: 10px 0;
+  padding-left: 20px;
+}
+
+.js-example, .css-example {
+  background: #f5f5f5;
+  padding: 8px;
+  border-radius: 4px;
+  font-size: 14px;
+  margin: 5px 0;
+}
+
+.accessibility-tip {
+  background-color: #e3f2fd;
+  padding: 10px;
+  border-radius: 4px;
+  margin-top: 15px;
+}
+
+
+.demo-fieldset {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 15px;
+  margin-bottom: 20px;
+}
+
+.demo-fieldset legend {
+  padding: 0 10px;
+  font-weight: bold;
+  color: #333;
+}
+
+.feature-list, .recommendation-list {
+  margin: 10px 0;
+  padding-left: 20px;
+}
+
+.styling-tip {
+  background-color: #f3e5f5;
+  padding: 10px;
+  border-radius: 4px;
+  margin-top: 15px;
+}
+
+.css-example {
+  background: #f5f5f5;
+  padding: 8px;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.email-input, .url-input {
+  width: 100%;
+  max-width: 300px;
+  padding: 8px 12px;
+  margin-bottom: 15px;
+  border: 2px solid #ddd;
+  border-radius: 4px;
+}
+
+.email-section, .url-section {
+  background: #f8f9fa;
+  padding: 15px;
+  border-radius: 4px;
+  margin-bottom: 20px;
+}
+
+.html-example {
+  background: #e9ecef;
+  padding: 8px;
+  border-radius: 4px;
+  font-size: 14px;
+  margin: 10px 0;
+}
+
+.common-tips {
+  background: #e3f2fd;
+  padding: 15px;
+  border-radius: 4px;
+}
+
+.color-picker {
+  width: 50px;
+  height: 50px;
+  padding: 2px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  cursor: pointer;
+  vertical-align: middle;
+}
+
+#color-value {
+  margin-left: 10px;
+  font-family: monospace;
+  font-size: 16px;
+}
+
+.features ul, .limitations ul {
+  margin: 10px 0;
+  padding-left: 20px;
+}
+
+.html-example {
+  background: #f5f5f5;
+  padding: 10px;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.limitations {
+  background: #fff3cd;
+  padding: 15px;
+  border-radius: 4px;
+  margin-top: 20px;
+}
+
+.styled-select {
+  width: 100%;
+  max-width: 300px;
+  padding: 8px;
+  border: 2px solid #ddd;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.definition, .attributes, .best-practices {
+  margin-bottom: 20px;
+}
+
+.css-example {
+  background: #f5f5f5;
+  padding: 10px;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.best-practices ol {
+  padding-left: 20px;
+}
+
+.locked-field {
+  background-color: #f8f9fa;
+  color: #333;
+  border: 1px solid #ddd;
+}
+
+.disabled-field {
+  background-color: #e9ecef;
+  color: #6c757d;
+  border: 1px solid #ced4da;
+}
+
+.comparison-table {
+  margin: 20px 0;
+  overflow-x: auto;
+}
+
+.comparison-table table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.comparison-table th, 
+.comparison-table td {
+  padding: 12px;
+  border: 1px solid #dee2e6;
+  text-align: left;
+}
+
+.comparison-table thead th {
+  background-color: #f8f9fa;
+}
+
+.comparison-table tbody tr:nth-child(odd) {
+  background-color: #f8f9fa;
+}
+
+.usage-recommendations {
+  margin-top: 30px;
+}
+
+.readonly-case, .disabled-case {
+  background: #f8f9fa;
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.readonly-case h4 {
+  color: #28a745;
+}
+
+.disabled-case h4 {
+  color: #dc3545;
+}
+
+.readonly-case ul, 
+.disabled-case ul {
+  padding-left: 20px;
+}
+
+.detailed-explanation {
+  margin-top: 30px;
+}
+
+.autocomplete-values ul {
+  padding-left: 20px;
+}
+
+.security-recommendations ol {
+  padding-left: 20px;
+}
+
+.security-recommendations ul {
+  padding-left: 40px;
+}
+
+.code-sample {
+  background: #f5f5f5;
+  padding: 10px;
+  border-radius: 4px;
+  font-family: monospace;
+  margin: 10px 0;
+}
+
+.browser-compatibility table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+}
+
+.browser-compatibility th, 
+.browser-compatibility td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+.browser-compatibility th {
+  background-color: #f2f2f2;
+}
+
+.form-row {
+  margin-bottom: 15px;
+}
+
+.button-group {
+  margin-top: 20px;
+}
+
+.button-group button {
+  margin-right: 10px;
+  padding: 8px 16px;
+}
+
+.value-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 15px 0;
+}
+
+.value-table th, 
+.value-table td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: left;
+}
+
+.value-table th {
+  background-color: #f2f2f2;
+}
+
+.accessibility-warning {
+  background-color: #fff3cd;
+  padding: 15px;
+  border-radius: 5px;
+  margin: 20px 0;
+}
+
+.accessibility-warning ul {
+  padding-left: 20px;
+}
+
+.best-practices ol {
+  padding-left: 20px;
+}
+
+/* Стили для демонстрации фокуса */
+input:focus, button:focus {
+  outline: 2px solid #4CAF50;
+  outline-offset: 2px;
+}
+
+
+.detailed-explanation {
+  margin-top: 30px;
+}
+
+.implementation-steps ol {
+  padding-left: 20px;
+}
+
+.code-sample {
+  background: #f5f5f5;
+  padding: 10px;
+  border-radius: 4px;
+  font-family: monospace;
+  margin: 10px 0;
+}
+
+.alternatives table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+}
+
+.alternatives th, 
+.alternatives td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: left;
+}
+
+.alternatives th {
+  background-color: #f2f2f2;
+}
+
+.demo-hint {
+  font-size: 14px;
+  color: #666;
+  margin-top: 10px;
+  font-style: italic;
+}
+
+
+.button-types {
+  display: grid;
+  gap: 30px;
+}
+
+.button-example {
+  border: 1px solid #eee;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.button-title {
+  margin-top: 0;
+  color: #2c3e50;
+  border-bottom: 2px solid #eee;
+  padding-bottom: 10px;
+}
+
+.demo-button {
+  padding: 8px 16px;
+  background: #f0f0f0;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.demo-button:hover {
+  background: #e0e0e0;
+}
+
+.demo-button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.demo-image-btn {
+  height: 50px;
+  cursor: pointer;
+}
+
+.button-details {
+  background: #f8f9fa;
+  padding: 15px;
+  border-radius: 8px;
+  margin-top: 15px;
+}
+
+.comparison-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.comparison-table th, 
+.comparison-table td {
+  border: 1px solid #ddd;
+  padding: 12px;
+  text-align: left;
+}
+
+.comparison-table th {
+  background-color: #f2f2f2;
+}
+
+.comparison-table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+
+
+.table-of-contents {
+  background: #f9f9f9;
+  padding: 1em;
+  border: 1px solid #ddd;
+  margin-bottom: 2em;
+  max-width: 300px;
+}
+.table-of-contents ul {
+  list-style: none;
+  padding-left: 0;
+}
+.table-of-contents li {
+  margin-bottom: 0.5em;
+}
+.table-of-contents a {
+  text-decoration: none;
+  color: #007acc;
+}
+.table-of-contents a:hover {
+  text-decoration: underline;
+}
+
+
+
+.page-layout {
+  display: flex;
+  gap: 2rem;
+}
+
+/* Оглавление */
+.table-of-contents {
+  width: 250px;
+  flex-shrink: 0;
+  background: #f9f9f9;
+  padding: 1rem;
+  border: 1px solid #ccc;
+  position: sticky;
+  top: 1rem;
+  height: fit-content;
+}
+
+/* Основной контент */
+.main-content {
+  flex: 1;
+}
+
+@media (max-width: 768px) {
+  .table-of-contents {
+    display: none;
+  }
+}
+
+
+
+
