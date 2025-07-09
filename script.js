@@ -70,3 +70,9 @@ document.getElementById('demoJsBtn').addEventListener('click', function() {
       this.innerHTML = '<span style="color:red">★</span> Нажми меня';
     }, 1000);
   });
+
+  function toggleMenu() {
+    const nav = document.getElementById("nav");
+    const expanded = nav.classList.toggle("open");
+    document.querySelector(".burger").setAttribute("aria-expanded", expanded);
+  }

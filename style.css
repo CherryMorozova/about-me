@@ -1,4 +1,5 @@
-/* Базовая стилистика */
+
+
 body {
   font-family: Georgia, serif;
   background-color: #fdf8f3;
@@ -8,7 +9,7 @@ body {
   line-height: 1.6;
 }
 
-/* Заголовки */
+
 h1, h2, h3 {
   color: #5b3e2b;
   margin-top: 0;
@@ -23,7 +24,7 @@ a:hover {
   text-decoration: underline;
 }
 
-/* Шапка и подвал */
+
 .site-header, .site-footer {
   background-color: #fffdf8;
   padding: 1.5rem;
@@ -36,14 +37,14 @@ a:hover {
   font-size: 0.9em;
 }
 
-/* Основной контейнер */
+
 .main-content {
   max-width: 960px;
   margin: 2rem auto;
   padding: 0 1rem;
 }
 
-/* Блоки */
+
 .example-section {
   background-color: #fffaf3;
   border-left: 6px solid #f5d7a3;
@@ -96,8 +97,8 @@ a:hover {
 
 
 
-/*START FORM*/
-  .example-section { /*карточка*/
+
+  .example-section { 
     background-color: #fdfaf5;
     border-radius: 16px;
     padding: 2rem;
@@ -108,7 +109,7 @@ a:hover {
     color: #3a3a3a;
   }
   
-  .example-title { /*Заголовок*/
+  .example-title { 
     font-size: 1.8rem;
     font-weight: bold;
     margin-bottom: 1.5rem;
@@ -116,26 +117,26 @@ a:hover {
     padding-bottom: 0.5rem;
   }
   
-  .example-grid {  /*бокс примера и как работает*/
+  .example-grid {  
     display: flex;
     flex-direction: row;
     gap: 2rem;
     flex-wrap: wrap;
   }
   
-  .example-code,  /*бокс - пример*/
-  .example-demo { /*бокс - как работает*/
+  .example-code,  
+  .example-demo { 
     flex: 1;
     min-width: 300px;
   }
   
-  .section-subtitle {  /*подзаголовок правого и левого боксов*/
+  .section-subtitle {  
     font-size: 1.2rem;
     margin-bottom: 0.5rem;
     color: #6b4c3b;
   }
   
-  .example-code-form {  /*пример кода*/
+  .example-code-form {  
     background-color: #f4f1eb;
     padding: 1rem;
     border-radius: 12px;
@@ -146,7 +147,7 @@ a:hover {
     color: #5a4e42;
   }
   
-  .demo-textarea {   /*  как работает*/
+  .demo-textarea {   
     width: 100%;
     border: 1px solid #ccc;
     padding: 0.8rem;
@@ -156,7 +157,7 @@ a:hover {
     font-family: inherit;
   }
   
-  .example-note {  /*описание*/
+  .example-note { 
     background-color: #fef6e9;
     border-left: 4px solid #e8b04f;
     padding: 1rem;
@@ -540,7 +541,7 @@ a:hover {
   padding-left: 20px;
 }
 
-/* Стили для демонстрации фокуса */
+
 input:focus, button:focus {
   outline: 2px solid #4CAF50;
   outline-offset: 2px;
@@ -688,7 +689,7 @@ input:focus, button:focus {
   gap: 2rem;
 }
 
-/* Оглавление */
+
 .table-of-contents {
   width: 250px;
   flex-shrink: 0;
@@ -700,7 +701,7 @@ input:focus, button:focus {
   height: fit-content;
 }
 
-/* Основной контент */
+
 .main-content {
   flex: 1;
 }
@@ -714,3 +715,353 @@ input:focus, button:focus {
 
 
 
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: system-ui, sans-serif;
+  line-height: 1.5;
+  background: #fdfdfd;
+  color: #333;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header {
+  background: #fff7f0;
+  border-bottom: 1px solid #ddd;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #c94e4e;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 1rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: #333;
+  padding: 0.5rem 0.75rem;
+  transition: 0.3s;
+}
+nav a:hover {
+  background: #ffe2d0;
+  border-radius: 6px;
+}
+
+.burger {
+  display: none;
+  font-size: 1.8rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+
+@media (max-width: 768px) {
+  .main-nav ul {
+    flex-direction: column;
+    gap: 0;
+    display: none;
+    background: #fff7f0;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  }
+  .main-nav.open ul {
+    display: flex;
+  }
+
+  .burger {
+    display: block;
+  }
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: system-ui, sans-serif;
+  line-height: 1.5;
+  background: #fffaf7;
+  color: #333;
+}
+header {
+  background: #f6e9dc;
+  padding: 1rem;
+  border-bottom: 2px solid #e0cfc2;
+}
+.containerr {
+  max-width: 1000px;
+  margin: auto;
+  padding: 0 1rem;
+}
+.logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #c96f50;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 0.5rem;
+}
+nav a {
+  text-decoration: none;
+  color: #333;
+  padding: 0.5rem 1rem;
+  background: #fcefe4;
+  border-radius: 6px;
+  transition: 0.3s;
+}
+nav a:hover {
+  background: #ecd5c0;
+}
+section {
+  padding: 2rem 1rem;
+  border-bottom: 1px solid #eee0d7;
+}
+h2 {
+  margin-bottom: 1rem;
+  color: #c96f50;
+}
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-top: 1rem;
+}
+footer {
+  text-align: center;
+  padding: 1rem;
+  background: #f6e9dc;
+  color: #666;
+}
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 30px;
+}
+th, td {
+  border: 1px solid #ddd;
+  padding: 12px;
+  text-align: left;
+}
+th {
+  background-color: #f2f2f2;
+}
+.common {
+  background-color: #e6f7ff;
+  font-weight: bold;
+}
+.highlight {
+  background-color: #fff2cc;
+}
+h1 {
+  color: #333;
+}
+.note {
+  font-style: italic;
+  margin-top: 20px;
+}
+*/
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: system-ui, sans-serif;
+  line-height: 1.5;
+  background: #fffaf7;
+  color: #333;
+}
+header {
+  background: #f6e9dc;
+  padding: 1rem;
+  border-bottom: 2px solid #e0cfc2;
+}
+.container {
+  max-width: 1000px;
+  margin: auto;
+  padding: 0 1rem;
+}
+.logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #c96f50;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 0.5rem;
+}
+nav a {
+  text-decoration: none;
+  color: #333;
+  padding: 0.5rem 1rem;
+  background: #fcefe4;
+  border-radius: 6px;
+  transition: 0.3s;
+}
+nav a:hover {
+  background: #ecd5c0;
+}
+section {
+  padding: 2rem 1rem;
+  border-bottom: 1px solid #eee0d7;
+}
+h2 {
+  margin-bottom: 1rem;
+  color: #c96f50;
+}
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-top: 1rem;
+}
+.about_businka {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+.about_businka_title {
+  flex: 1;
+}
+.about_businka img {
+  flex: 1;
+  max-width: 100%;
+  border-radius: 12px;
+}
+footer {
+  text-align: center;
+  padding: 1rem;
+  background: #f6e9dc;
+  color: #666;
+}
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  .about_businka {
+    flex-direction: column;
+  }
+}
+
+
+.grid-containerе {
+  background-color: #007acc;
+  /*теперь это grid container - родительский элемент */
+  display: grid; 
+  /*создано 3 колонки*/
+  grid-template-columns: 150px auto 50%;
+  /*создано 3 ряда */
+  grid-template-rows: 250px 10vw 15rem;
+
+  gap: 10px;
+  grid-auto-rows: 50px;
+  grid-auto-columns: 20px;
+
+  place-content: center; /* Центрирует всю сетку */
+
+
+
+
+ 
+  
+
+  /*
+  создано 3 ряда по 250 пикселей
+  grid-template-columns: repeat(3, 250px);
+  */
+
+  /*
+  fr (от fraction — доля, часть)
+  три колонки, каждая из которых будет занимать 1/3 ширины родителя
+  grid-template-columns: repeat(3, 1fr);
+  Что аналогично записи:
+  grid-template-columns: 1fr 1fr 1fr;
+  */
+
+   /*
+  когда количество колонок или строк не известно
+  можно установить значения auto-fill или auto-fit
+  ///
+  auto-fill стремится заполнить колонками всё доступное пространство, 
+  а когда элементы заканчиваются, создаёт пустые колонки, 
+  равномерно распределяя доступную область между существующими и «виртуальными» колонками.
+  grid-template-columns: repeat(auto-fill, размер колонки);
+  ////
+  auto-fit действует похожим образом, но, схлопывает пустые колонки и 
+  отдаёт больше места под заполненные.
+  grid-template-columns: repeat(auto-fit, размер колонки);
+  */
+}
+
+ /*
+  Если элементов внутри грид-контейнера больше, чем может поместиться в заданные явно ряды и колонки, 
+  то для них создаются автоматические, неявные ряды и колонки. 
+  При помощи свойств grid-auto-columns и grid-auto-rows 
+  можно управлять размерами этих автоматических рядов и колонок.
+  display: grid;
+  grid-template-rows: 50px 140px;
+  grid-auto-rows: 40px;
+  gap: 20px;
+  ///
+  Можно задавать больше одного значения для автоматических колонок или рядов. 
+  Тогда паттерн размера будет повторяться до тех пор, пока не кончатся грид-элементы.
+  display: grid;
+  grid-template-columns: 200px 500px;
+  grid-auto-columns: 75px 100px 50px;
+  grid-auto-flow: column;
+  gap: 20px;
+  ////
+  auto-fit действует похожим образом, но, схлопывает пустые колонки и 
+  отдаёт больше места под заполненные.
+  grid-template-columns: repeat(auto-fit, размер колонки);
+  */
+  
+.grid-container {
+  border: solid ;
+}
